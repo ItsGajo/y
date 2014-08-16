@@ -9,7 +9,7 @@
     			<url></url></urls>
     		<inputs>
     			<key id="symbol" type="xs:string" paramType="variable" required="true"></key></inputs>
-    		<execute><![CDATA[var url = "http://finance.yahoo.com/q/bs?s=" + {symbol} + "&quarterly";
+    		<execute><![CDATA[var url = "http://finance.yahoo.com/q/bs?s=" + symbol + "&quarterly";
 var resp = y.rest(url).get().response;
 
 response.object = resp;]]></execute></select></bindings></table>
