@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <table xmlns="http://query.yahooapis.com/v1/schema/table.xsd">
+    
+    
+    <meta><author>Gajo</author><sampleQuery>select * from {table} where symbol="T"</sampleQuery></meta>
+    <bindings>
+    	<select>
+    		<urls>
+    			<url></url></urls>
+    		<inputs>
+    			<key id="symbol" type="xs:string" paramType="variable" required="true"></key></inputs>
+    		<execute><![CDATA[response.object = "<root></root>"]]></execute></select></bindings></table>
